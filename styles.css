@@ -1,0 +1,326 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.rem;
+    color: hsl(243, 87%, 12%);
+    margin: 0;
+}
+h1,h2,h3 {
+    font-family: 'Raleway', sans-serif;
+}
+h1, h2 {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+    margin: 0;
+}
+/*navbar*/
+nav {
+    background-color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5rem 1.5rem;
+    font-size: 1rem;
+}
+img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+ul {
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+}
+ul a {
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+}
+li {
+    display: inline-block;
+    padding-left: 3.5rem;
+}
+/*main*/
+.container-fluid {
+    width: 100%;
+}
+.container {
+    padding: 2rem 5rem;
+    display: flex;
+}
+.container-child-1 {
+    align-self: center;
+    width: 50%;
+}
+.container-child-2 {
+    /*padding-right: 6rem;*/
+    width: 50%;
+}
+.container-child-3 {
+    width: 60%;
+}
+/*buttons*/
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    width: 90%;
+}
+input {
+    flex-grow: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    border: solid 0.05rem;
+    padding: 0.8rem 0.8rem;
+    margin-right: 1rem;
+    width: 50%;
+}
+button {
+    flex-grow: 3;
+    background-color: hsl(224, 93%, 58%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: solid 0.05rem;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+    border: none;
+    width: 20%;
+}
+button:hover {
+    background-color: hsl(224, 93%, 50%);
+}
+button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*stay productive*/
+.background-img {
+    display: flex;
+    position: relative;
+    top: 1rem;
+    flex-flow: column;
+    align-items: stretch;
+    margin-top: 5rem;
+}
+.violet {
+  background-color: hsl(240, 75%, 98%);
+}
+.link {
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid currentColor;
+}
+
+/*card*/
+.card {
+    background-color: white;
+    text-align: left;
+    line-height: 2rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    width: 60%;
+    padding: 2rem 3rem;
+    margin: 5rem 0;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 90%);
+}
+.quotes {
+    width: 1rem;
+    padding-bottom: 1rem;
+}
+.card-testimonial {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    align-items: center;
+    padding: 1rem 0rem 0rem;
+}
+.photo {
+    width: 13%;
+    padding-right: 1rem;
+}
+.author {
+    width: 80%;
+}
+b {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    margin: 0;
+}
+.avatar {
+    border-radius: 50%;
+}
+/*get early access*/
+.dark-violet {
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    padding: 4rem 0rem;
+}
+.container-nonreverse {
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    }
+.child-1 {
+    width: 40%;
+}
+.child-2 {
+    width: 40%;
+}
+.column {
+    flex-direction: column;
+}
+.column input {
+    width: 100%;
+    border: 0;
+    margin: 1rem 0;
+}
+.column button {
+    width: 40%;
+}
+/*footer*/
+.dark {
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    font-size: 0.9rem;
+}
+.logo {
+    width: 15%;
+    padding: 3rem 5rem 0rem;
+}
+footer .container-nonreverse {
+    padding-top: 0;
+}
+.col-4 {
+    width: 20%;
+}
+footer ul {
+    padding: 0;
+}
+footer li {
+    padding-left: 0;
+    padding-bottom: 0.5rem;
+    display: block;
+}
+footer li a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+footer .icon {
+    padding-right: 0.3rem;
+}
+.social-media {
+    display: flex;
+}
+.social-media i {
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+}
+/*queries*/
+@media screen and (max-width: 770px) {
+    body {
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 2rem 0;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .sm {
+        width: 25%;
+    }
+    /*navbar*/
+    .navbar {
+        padding: 1.8rem;
+        font-size: 0.8rem;
+    }
+    li {
+        padding-left: 1rem;
+    }
+    /*main*/
+    .container {
+        padding: 1.8rem;
+        flex-direction: column-reverse;
+    }
+    .container-nonreverse {
+        padding: 1.8rem;
+        display: block;
+    }
+    .container-child-1 {
+        width: 100%;
+    }
+    .container-child-2 {
+        padding-right: 0;
+        margin: auto;
+        width: 100%;
+    }
+    .child-1 {
+        width: 100%;
+    }
+    /*buttons inputs*/
+    .buttons {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+    input {
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+    /*card*/
+    .card {
+        font-size: 1rem;
+        margin: 2rem auto;
+        width: 80%;
+        padding: 1.5rem;
+    }
+    .card-testimonial {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
+    }
+    /*get early access*/
+    .dark-violet {
+        padding: 0rem 0rem;
+    }
+    .child-2 {
+        width: 100%;
+    }
+    .column button {
+        width: 100%;
+    }
+    /*footer*/
+   .col-4 {
+       width: 100%;
+       text-align: left;
+       margin-bottom: 2rem;
+   }
+   .logo {
+    padding: 3rem 2rem 0rem 2rem;
+    width: 50%;
+   }
+}
+@media screen and (min-width: 771px){
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
