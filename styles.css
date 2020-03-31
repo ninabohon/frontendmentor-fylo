@@ -30,7 +30,6 @@ nav {
 img {
     width: 100%;
     height: auto;
-    /* position: relative; */
 }
 ul {
     list-style-type: none;
@@ -57,7 +56,6 @@ li {
     width: 50%;
 }
 
-
 /*input and button*/
 .signup {
     display: flex;
@@ -74,17 +72,16 @@ input {
     padding: 0.8rem 0.8rem;
     margin-right: 1rem;
     width: 50%;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 button {
     flex-grow: 3;
     background-color: hsl(224, 93%, 58%);
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    border-radius: 3px;
-    border: solid 0.05rem;
-    padding: 0.8rem 0 0.8rem 0;
+    padding: 0.8rem 0;
     border: none;
+    border-radius: 3px;
     width: 20%;
     box-sizing: content-box;
   }
@@ -109,14 +106,23 @@ button a {
     align-items: stretch;
     margin-top: 5rem;
 }
-.violet {
+.container-violet {
+  padding: 5rem;
+  display: flex;
   background-color: hsl(240, 75%, 98%);
+}
+.col1-violet {
+  width: 55%;
+  margin-right: 2rem;
+}
+.col2-violet {
+  width: 45%;
 }
 .link {
     color: hsl(170, 45%, 43%);
     text-decoration: none;
     padding-bottom: 0.2rem;
-    border-bottom: 1px solid currentColor;
+    border-bottom: 1px solid;
 }
 .link span {
   vertical-align: middle;
@@ -144,7 +150,7 @@ button a {
     font-size: 0.8rem;
     line-height: 1.3rem;
     align-items: center;
-    padding: 1rem 0rem 0rem;
+    padding: 1rem 0 0;
 }
 .photo {
     width: 13%;
@@ -166,17 +172,16 @@ b {
 .dark-violet {
     background-color: hsl(238, 22%, 44%);
     color: white;
-    padding: 4rem 0rem;
+    padding: 4rem 0;
 }
 .container-nonreverse {
     padding: 2rem 5rem;
     display: flex;
     justify-content: space-between;
     }
-.container-nonreverse-item {
+.col-nonreverse-2 {
     width: 40%;
 }
-
 .column {
     flex-direction: column;
 }
@@ -196,7 +201,7 @@ b {
 }
 .logo {
     width: 15%;
-    padding: 3rem 5rem 0rem;
+    padding: 3rem 5rem 0;
 }
 footer .container-nonreverse {
     padding-top: 0;
@@ -244,7 +249,7 @@ footer a {
   border-radius: 50%;
 }
 
-/*queries*/
+/*Mobile*/
 @media screen and (max-width: 770px) {
     body {
         text-align: center;
@@ -278,13 +283,44 @@ footer a {
     .col-2 {
         width: 100%;
     }
-
+    /* stay productive */
+    .container-violet {
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column-reverse;
+      background-color: hsl(240, 75%, 98%);
+    }
+    .col1-violet {
+      width: 100%;
+    }
+    .col2-violet {
+      width: 100%;
+    }
+    /*card*/
+    .card {
+        font-size: 1rem;
+        margin: 2rem auto;
+        width: 80%;
+        padding: 1.5rem;
+    }
+    .card-testimonial {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
+    }
     /* get early access */
     .container-nonreverse {
         padding: 1.8rem;
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
-    .container-nonreverse-item {
+    .col-nonreverse-2 {
+        width: 100%;
+    }
+    .dark-violet {
+        padding: 0 0;
+    }
+    .column button {
         width: 100%;
     }
     /*buttons inputs*/
@@ -299,28 +335,7 @@ footer a {
         width: 100%;
         margin: 0.4rem 0;
     }
-    /*card*/
-    .card {
-        font-size: 1rem;
-        margin: 2rem auto;
-        width: 80%;
-        padding: 1.5rem;
-    }
-    .card-testimonial {
-        font-size: 0.8rem;
-        display: flex;
-        flex-direction: row;
-    }
-    /*get early access*/
-    .dark-violet {
-        padding: 0rem 0rem;
-    }
-    .child-2 {
-        width: 100%;
-    }
-    .column button {
-        width: 100%;
-    }
+
     /*footer*/
    .col-4 {
        width: 100%;
@@ -328,8 +343,12 @@ footer a {
        margin-bottom: 2rem;
    }
    .logo {
-    padding: 3rem 2rem 0rem 2rem;
+    padding: 3rem 2rem 0 2rem;
     width: 50%;
+   }
+   .social-icon {
+     margin-left: 0;
+     margin-right: 0.5rem;
    }
 }
 
